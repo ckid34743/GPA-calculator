@@ -65,8 +65,8 @@ D_grade = 1.0
 D_minus_grade = 0.7
 F_grade = 0.0
 
-Predicted_GPA = int((class_1_grade + class_2_grade + class_3_grade + class_4_grade + class_5_grade + class_6_grade + class_7_grade + class_8_grade + class_9_grade + class_10_grade) / course_amount)
+Predicted_GPA = Decimal((class_1_grade + class_2_grade + class_3_grade + class_4_grade + class_5_grade + class_6_grade + class_7_grade + class_8_grade + class_9_grade + class_10_grade) / course_amount)
 
-Final_GPA = round(
+Final_GPA = number.quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)
 
 print("Your GPA" + "(4.0)" + "is: " + str(Final_GPA))
