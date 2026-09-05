@@ -1,2 +1,2 @@
 # GPA-calculator
-Calculate your GPA instantly!
+Calculate your unweighted GPA instantly! Just enter the amount of classes you're taking,
