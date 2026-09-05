@@ -1,3 +1,5 @@
+from decimal import Decimal, ROUND_HALF_UP
+
 empty = ""
 print("UNWEIGHTED GPA CALCULATOR FOR EDISON")
 print(empty)
@@ -63,6 +65,8 @@ D_grade = 1.0
 D_minus_grade = 0.7
 F_grade = 0.0
 
-Final_GPA = int((class_1_grade + class_2_grade + class_3_grade + class_4_grade + class_5_grade + class_6_grade + class_7_grade + class_8_grade + class_9_grade + class_10_grade) / course_amount)
+Predicted_GPA = int((class_1_grade + class_2_grade + class_3_grade + class_4_grade + class_5_grade + class_6_grade + class_7_grade + class_8_grade + class_9_grade + class_10_grade) / course_amount)
+
+Final_GPA = round(
 
 print("Your GPA" + "(4.0)" + "is: " + str(Final_GPA))
